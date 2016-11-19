@@ -1,0 +1,21 @@
+<script>
+    var data = [
+        {"name":"dennis","date":"1989-06-28"},
+        {"name":"kevin","date":"1967-09-13"}
+    ];
+
+    function compareObjects(a,b){
+        if(a.date > b.date){
+            return 1;
+        }else if(a.date < b.date){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+
+    var sorted = data.sort(compareObjects);
+
+    console.log(sorted);
+
+</script>
